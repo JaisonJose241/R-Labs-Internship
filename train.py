@@ -59,13 +59,13 @@ train_datagen = ImageDataGenerator(
 
 test_datagen = ImageDataGenerator(rescale=1./255)
 
-training_set = train_datagen.flow_from_directory('C:/J SN/R-Labs/Internship-R-Labs/data/TRAIN',
+training_set = train_datagen.flow_from_directory('data/TRAIN',
                                                  target_size=(128, 128),
                                                  batch_size=10,
                                                  color_mode='grayscale',
                                                  class_mode='categorical')
 
-test_set = test_datagen.flow_from_directory('C:/J SN/R-Labs/Internship-R-Labs/data/TEST',
+test_set = test_datagen.flow_from_directory('data/TEST',
                                             target_size=(128, 128),
                                             batch_size=10,
                                             color_mode='grayscale',
