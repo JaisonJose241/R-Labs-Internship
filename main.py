@@ -1,8 +1,18 @@
+'''
+
+startDate:  07 - 06 -2020
+Project  :  Gesture Recognition
+Part     :  prediction
+Libraries:  Keras (tensorlow == 2.1),
+            numpy,
+            cv2
+Team ID  :  4
+
+''' 
 import numpy as np
 from keras.models import model_from_json
-import operator
 import cv2
-import sys, os
+import operator
 
 #....................................................................
 
